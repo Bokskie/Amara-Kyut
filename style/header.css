@@ -1,0 +1,139 @@
+.header 
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--white-bg-color);
+    padding: 10px 0;
+    box-sizing: border-box;
+    border-bottom: 6px solid var(--primary-bg-color);
+}
+.header-margin-section 
+{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.header-container 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-logo img 
+{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.header-logo img:hover 
+{
+    transform: scale(1.02);
+    transition: transform 0.3s ease; 
+}
+.header-navigation 
+{
+    display: flex;
+    gap: 20px;
+}
+.header-navigation a 
+{
+    position: relative;
+    display: inline-block;
+    color: var(--primary-text-color);
+    font-weight: 550;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+.header-navigation a:hover,
+.header-navigation a.active 
+{
+    border-bottom: 2px solid var(--primary-bg-color);
+    color: var(--primary-bg-color);
+    transform: scale(1.1);
+}
+
+/*---------hamburger menu------*/
+.header-toggle 
+{
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: var(--primary-text-color);
+    padding: 0;
+    z-index: 101;
+}
+.header-navigation 
+{
+    display: flex;
+}
+
+/* Media Queries for Responsive Behavior */
+@media (max-width: 1024px) {
+    .header-navigation 
+    {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; 
+        background-color: var(--white-bg-color);
+        left: 0;
+        border-top: 6px solid var(--primary-bg-color);
+        transition: transform 0.3s ease;
+        justify-content: center;
+    }
+    .header-navigation a
+    {
+        text-align: center;
+    }
+    .header-navigation.show 
+    {
+        display: flex; 
+    }
+
+    .header-toggle 
+    {
+        display: block; 
+    }
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .header-margin-section 
+    {
+        padding: 0 10px;
+    }
+
+    .header-navigation 
+    {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--white-bg-color);
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        border-top: 6px solid var(--primary-bg-color);
+    }
+    .header-navigation.show 
+    {
+        display: flex;
+    }
+
+    .header-toggle 
+    {
+        display: block;
+    }
+
+    .header-navigation a 
+    {
+        padding: 15px 20px; 
+        text-align: center;
+        font-size: var(--fs-small);
+    }
+}

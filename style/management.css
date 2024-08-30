@@ -1,0 +1,146 @@
+.management
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 40px 0;
+}
+.management-margin-section
+{
+    width: 1200px;
+    max-width: 100%;
+    margin: auto;
+}
+.management-header-name
+{
+    font-size: var(--fs-xl);
+    font-weight: 900;
+    text-align: center;
+    padding: 20px 0;
+}
+.management-container
+{
+    position: relative;
+    top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+}
+.management-content
+{
+    background-color: var(--primary-bg-color);
+    border-radius: 20px;
+    padding: 40px;
+}
+.management-content-header-name 
+{
+    font-size: var(--fs-medium);
+    font-weight: 600;
+    color: var(--secondary-text-color);
+}
+.management-content-paragraph
+{
+    font-size: var(--fs-small);
+    padding-top: 20px;
+    color: var(--secondary-text-color);
+}
+.management-content-paragraph span 
+{
+    font-weight: 600;
+}
+
+/* Keyframes for animations */
+@keyframes slideFromBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animation classes */
+.slideFromBottom {
+    animation: slideFromBottom 0.6s ease-out forwards;
+}
+
+/* Ensure that elements have initial styles for animations */
+.management-content {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Animation class for visible state */
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablets and Small Laptops (max-width: 1024px) */
+@media (max-width: 1024px) 
+{
+    .management-margin-section
+    {
+        max-width: 90%;
+    }
+    .management-container 
+    {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto; 
+        gap: 1.5rem; 
+    }
+    .management-content 
+    {
+        padding: 20px; 
+    }
+    .management-header-name 
+    {
+        font-size: var(--fs-large); 
+    }
+    .management-content-header-name 
+    {
+        font-size: var(--fs-medium); 
+    }
+
+    .management-content-paragraph 
+    {
+        font-size: var(--fs-small); 
+    }
+
+}
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .management-margin-section 
+    {
+        padding: 0 10px; 
+    }
+    .management-header-name 
+    {
+        font-size: var(--fs-medium); 
+    }
+    .management-container 
+    {
+        grid-template-columns: 1fr; 
+        gap: 1rem; 
+    }
+    .management-content 
+    {
+        padding: 15px; 
+    }
+    .management-content-header-name 
+    {
+        font-size: var(--fs-small); 
+    }
+    .management-content-paragraph 
+    {
+        font-size: var(--fs-very-small);
+    }
+}

@@ -1,0 +1,292 @@
+.home
+{
+    background-color: var(--gray-bg-color);
+    padding: 40px 0 60px 0;
+    overflow: hidden;
+}
+.home-margin-section
+{
+    width: 1200px;
+    max-width: 100%;
+    margin: auto;
+}
+.home-container
+{
+    position: relative;
+    top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    gap: 4rem;
+}
+/*----home text introduction------*/
+.home-header-name
+{
+    font-size: var(--fs-xl);
+    font-weight: 900;
+}
+/*----header sub animation-------*/
+.home-sub-header-name
+{
+    font-size: var(--fs-medium);
+    font-weight: 600;
+}
+.home-sub-header-name::before 
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    animation: borderMove 4s linear infinite;   
+}
+
+.dynamic-text 
+{
+    display: inline;
+    color: var(--primary-bg-color); 
+}
+@keyframes borderMove 
+{
+    0%, 100% {
+      width: 0;
+      left: 0;
+    }
+    50% {
+      width: 100%;
+      left: 0;
+    }
+}
+.home-paragraph
+{
+    font-size: var(--fs-small);
+    padding: 10px 0;
+}
+.home-image-container
+{
+    margin: auto;
+}
+.home-image-container img 
+{
+    width: 400px;
+    height: 400px;
+    text-align: center;
+}
+/*----social media icons----*/
+.home-social-media-icons
+{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px 0;
+}
+.home-social-media-icons a i 
+{
+    background-color: var(--primary-bg-color);
+    color: var(--secondary-text-color);
+    font-size: var(--fs-medium);
+    box-shadow: 0 0 15px var(--primary-bg-color);
+    border-radius: 3rem;
+    padding: 4px;
+}
+.home-social-media-icons a i:hover 
+{
+    transform: scale(1.2);
+    box-shadow: 0 0 25px var(--primary-bg-color);
+}
+/*-----buttons-----*/
+.home-buttons
+{
+    position: relative;
+    display: inline-block;
+    top: 20px;
+}
+.home-buttons a 
+{
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 3rem;
+    border: 1px solid var(--primary-bg-color);
+    font-size: var(--fs-small);
+    font-weight: 600;
+    color: var(--primary-text-color);
+}
+.home-buttons a:hover
+{
+    background-color: var(--primary-bg-color);
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--primary-bg-color)
+}
+.home-buttons .order 
+{
+    background-color: var(--primary-bg-color);
+    color: var(--secondary-text-color);
+    box-shadow: 0 0 15px var(--primary-bg-color)
+}
+
+
+/*------Keyframes for animations--------*/
+.home-header-name, .home-sub-header-name, .home-paragraph {
+    opacity: 0;
+    transform: translateX(-10%);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.home-social-media-icons, .home-buttons {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.home-image-container {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+
+/*---------Keyframes for animations-------*/
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.home-header-name, .home-sub-header-name, .home-paragraph,
+.home-social-media-icons, .home-buttons, .home-image-container {
+    opacity: 0;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.slideFromLeft {
+    animation: slideFromLeft 0.6s ease-out forwards;
+}
+
+.slideFromBottom {
+    animation: slideFromBottom 0.6s ease-out forwards;
+}
+
+.slideFromRight {
+    animation: slideFromRight 0.6s ease-out forwards;
+}
+
+
+
+
+/* Media Queries for Responsive Design */
+
+/* Tablets and Small Laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .home-container 
+    {
+        grid-template-columns: 1fr; 
+        gap: 6rem; 
+        padding: 30px 0;
+    }
+    .home-margin-section
+    {
+        width: 90%;
+        margin: auto;
+    }
+    .home-image-container
+    {
+        order: -1;
+    }
+    .home-image-container img 
+    {
+        width: 300px; 
+        height: auto;
+        margin: auto;
+    }
+
+    .home-buttons 
+    {
+        text-align: center; 
+    }
+}
+
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .home-margin-section 
+    {
+        width: 80%; 
+        margin: auto;
+    }
+    .home-container 
+    {
+        gap: 2rem; 
+        padding: 30px 0;
+    }
+    .home-header-name 
+    {
+        font-size: var(--fs-large); 
+    }
+    .home-sub-header-name 
+    {
+        font-size: var(--fs-medium);
+        padding: 10px 0;
+    }
+    .home-paragraph 
+    {
+        font-size: var(--fs-xsmall);
+        padding: 10px 0; 
+    }
+    .home-image-container img 
+    {
+        width: 80%; 
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .home-social-media-icons
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+    .home-buttons 
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center; 
+        width: 100%;
+    }
+    .home-buttons a
+    {
+        width: 100%; 
+        margin-top: 10px; 
+    }
+    
+
+}

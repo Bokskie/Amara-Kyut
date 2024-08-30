@@ -1,0 +1,123 @@
+.device-responsive
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 40px 0;
+    overflow: hidden;
+}
+.device-responsive-margin-section
+{
+    width: 1200px;
+    max-width: 100%;
+    margin: auto;
+}
+.device-responsive-header-name
+{
+    font-size: var(--fs-xl);
+    font-weight: 900;
+    text-align: center;
+    padding: 20px 0;
+}
+.device-responsive-container
+{
+    background-color: var(--primary-bg-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 2rem;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 3rem;
+}
+.device-responsive-text-header-name
+{
+    font-size: var(--fs-medium);
+    font-weight: 600;
+    padding: 20px 0;
+    color: var(--secondary-text-color);
+}
+.device-responsive-paragraph 
+{
+    font-size: var(--fs-small);
+    padding: 20px 0;
+    color: var(--secondary-text-color);
+}
+.device-responsive-image-section
+{
+    width: 100%;
+    margin: auto;
+}
+
+
+
+/* Media Queries for Responsive Design */
+
+/* Tablets and Small Laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .device-responsive-margin-section 
+    {
+        width: 90%;
+        padding: 0 15px; 
+    }
+    .device-responsive-container 
+    {
+        grid-template-columns: 1fr; 
+        gap: 1.5rem; 
+    }
+    .device-responsive-header-name 
+    {
+        font-size: var(--fs-large);
+    }
+    .device-responsive-text-header-name 
+    {
+        text-align: center;
+        font-size: var(--fs-medium); 
+    }
+    .device-responsive-paragraph 
+    {
+        text-align: center;
+        font-size: var(--fs-small); 
+    }
+    .device-responsive-image-section
+    {
+        display: flex;
+        justify-content: center;
+        order: -1;
+    }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .device-responsive-margin-section 
+    {
+        width: 90%;
+        padding: 0 10px; 
+    }
+    .device-responsive-container 
+    {
+        grid-template-columns: 1fr; 
+        gap: 1rem; 
+        padding: 2rem
+    }
+    .device-responsive-header-name 
+    {
+        font-size: var(--fs-medium); 
+    }
+    .device-responsive-text-header-name 
+    {
+        font-size: var(--fs-small); 
+        text-align: left;
+    }
+    .device-responsive-paragraph 
+    {
+        font-size: var(--fs-very-small); 
+        text-align: left;
+    }
+    .device-responsive-image-section img 
+    {
+        width: 100%;
+    }
+}

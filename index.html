@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amara Food Court Management System</title>
+
+    <link rel="stylesheet" type="text/css" href="./style/index.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "QxvoBEgljyb3-Azvi",
+        });
+    })(); 
+    </script>
+
+</head> 
+<body>
+
+    <div class="header">
+        <div class="header-margin-section">
+            <div class="header-container">
+                <a class="header-logo" href="#home">
+                    <img src="./images/logo.png" alt="Logo">
+                </a>
+                <button class="header-toggle" aria-label="Toggle navigation">
+                    <span class="sr-only"></span>
+                    &#9776;
+                </button>
+                <div class="header-navigation" id="nav-menu">
+                    <a href="#home">Home</a>
+                    <a href="#management">Management</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#device-responsive">Devices Responsive</a>
+                    <a href="#services">Services</a>
+                    <a href="#about">About Us</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <section class="home" id="home">
+            <div class="home-margin-section">
+                <div class="home-container">
+                    <div class="home-introduction">
+                        <div class="home-header-name">
+                            Welcome to
+                        </div>
+                        <div class="home-sub-header-name">
+                            Amara's <span id="dynamic-text" class="dynamic-text"></span>
+                        </div>
+                        <div class="home-paragraph">
+                            Where Every Meal is a Celebration! Dive into a world of flavors with our diverse selection of culinary delights. From mouthwatering local favorites to international cuisine, each visit promises a new and exciting taste experience. Enjoy the vibrant atmosphere as you explore our various food stalls, each offering something unique and delicious. Join us and make every meal a memorable occasion!
+                        </div>
+                        <div class="home-social-media-icons">
+                                <a href=""><i class='bx bxl-telegram' ></i></a>
+                                <a href=""><i class='bx bxl-facebook-circle'></i></a>
+                                <a href=""><i class='bx bxl-tiktok' ></i></a>
+                                <a href=""><i class='bx bxl-instagram' ></a></i>
+                        </div>
+                        <div class="home-buttons">
+                            <a href="#contact">Contact</a>
+                            <a href="#menu" class="order">Order Now!</a>
+                        </div>
+                    </div>
+                    <div class="home-image-container">
+                        <img src="./images/home-page.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="management" id="management">
+            <div class="management-margin-section">
+                <div class="management-header-name">Food Management</div>
+                    <div class="management-container">
+                        <div class="management-content">
+                            <div class="management-content-header-name">
+                                <i class='bx bx-cog'></i> Comprehensive Operations Solution
+                            </div>
+                            <div class="management-content-paragraph">
+                                <span>Streamline Every Aspect of Your Food Court </span>Optimize your food court’s daily operations with our all-in-one management system. From vendor coordination to operational efficiency, get everything you need to run a successful food court.
+                            </div>
+                        </div>
+                        <div class="management-content">
+                            <div class="management-content-header-name">
+                                <i class='bx bx-cart' ></i> Efficient Online Ordering System
+                            </div>
+                            <div class="management-content-paragraph">
+                                <span>Simplify and Streamline Your Food Orders </span>Transform the way customers place orders with our efficient online ordering system. Enjoy a user-friendly interface that allows for quick, hassle-free ordering directly from your device.
+                            </div>
+                        </div>
+                        <div class="management-content">
+                            <div class="management-content-header-name">
+                                <i class='bx bx-food-menu' ></i> Easy Menu Management
+                            </div>
+                            <div class="management-content-paragraph">
+                                <span>Update and Manage Your Offerings Effortlessly </span>Quickly update your menu and manage your food court’s offerings with ease. Our intuitive management tools make it simple to adjust items, prices, and specials, keeping your menu fresh and relevant.
+                            </div>
+                        </div>
+                        <div class="management-content">
+                            <div class="management-content-header-name">
+                                <i class='bx bx-message-rounded-dots'></i> Streamlined Customer Interaction
+                            </div>
+                            <div class="management-content-paragraph">
+                                <span>Enhance Engagement with Your Diners </span>Improve how you connect with your customers through our simplified engagement system. Gather feedback, manage interactions, and keep your patrons satisfied with ease.
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu" id="menu">
+            <div class="menu-margin-section">
+    <!----------------------menu section------------>
+                <div class="menu-header-name">Menu</div>
+                <div class="menu-searchbar">
+                    <input type="search" id="search" placeholder="Search Your Craving's">
+                    <button><i class='bx bx-search-alt-2' ></i></button>
+                </div>
+                    <div class="menu-container">
+    <!----------------------main dishes seciotn---------------------------->
+                        <div class="menu-food-names">Main Dishes</div>
+                            <div class="menu-content-boxs">
+    <!----------------------main dishes Pasta Carbonara content------------>
+                                <div class="menu-content-box" data-food-content="food-content-1">
+                                    <div class="menu-image">
+                                        <img src="./images/menu/main-dish/dish-1.jpg" alt="">
+                                    </div>
+                                    <div class="menu-content-header-name">
+                                        Pasta Carbonara
+                                    </div>
+                                </div>
+                                <div id="food-content-1" class="food-content">
+                                    <div class="food-container">
+                                        <span class="close" data-food-content="food-content-1">&times;</span>
+                                        <img id="food-content-image" src="./images/menu/main-dish/dish-1.jpg" alt="">
+                                        <div class="food-header-name" id="food-content-title">Pasta Carbonara</div>
+                                        <div class="food-paragraph" id="food-content-description">
+                                            Indulge in a classic Italian favorite with our Pasta Carbonara. This creamy dish features al dente pasta tossed in a rich, velvety sauce made from eggs, Parmesan cheese, and pancetta. Each bite is complemented by the savory flavors of crispy pancetta and freshly cracked black pepper, creating a perfectly balanced and comforting meal. Garnished with a sprinkle of extra Parmesan and a touch of parsley, it's a timeless recipe that promises to satisfy your cravings for something deliciously hearty and utterly delightful.
+                                        </div>
+                                        <div class="food-price">Price: ₱ 75</div>
+                                        <div class="food-content-quantity">
+                                            <label for="quantity">Quantity:</label>
+                                            <input type="number" id="quantity" value="1" min="1">
+                                        </div>
+                                        <div class="food-total-price">Total: ₱ 75</div>
+                                        <button id="order-button">Order</button>
+                                    </div>
+                                </div>
+    <!----------------------main dishes Beef Stroganoff content------------>
+                                <div class="menu-content-box" data-food-content="food-content-2">
+                                    <div class="menu-image">
+                                        <img src="./images/menu/main-dish/dish-2.jpg" alt="">
+                                    </div>
+                                    <div class="menu-content-header-name">
+                                        Beef Stroganoff
+                                    </div>
+                                </div>
+                                <div id="food-content-2" class="food-content">
+                                    <div class="food-container">
+                                        <span class="close" data-food-content="food-content-2">&times;</span>
+                                        <img id="food-content-image" src="./images/menu/main-dish/dish-2.jpg" alt="">
+                                        <div class="food-header-name" id="food-content-title">Beef Stroganoff</div>
+                                        <div class="food-paragraph" id="food-content-description">
+                                            Experience the ultimate comfort food with our Beef Stroganoff, a time-honored classic that combines succulent strips of beef with earthy mushrooms and onions, all enveloped in a luscious, creamy sauce. This dish is crafted with a harmonious blend of flavors, where tender beef meets a velvety sour cream sauce, creating a truly indulgent experience. Perfectly served over egg noodles, rice, or mashed potatoes, it's a hearty and elegant meal that's sure to satisfy.
+                                        </div>
+                                        <div class="food-price">Price: ₱ 135</div>
+                                        <div class="food-content-quantity">
+                                            <label for="quantity">Quantity:</label>
+                                            <input type="number" id="quantity" value="1" min="1">
+                                        </div>
+                                        <div class="food-total-price">Total: ₱ 135</div>
+                                        <button id="order-button">Order</button>
+                                    </div>
+                                </div>
+    <!----------------------main dishes Chicken Parmesan content------------>
+                                <div class="menu-content-box" data-food-content="food-content-3">
+                                    <div class="menu-image">
+                                        <img src="./images/menu/main-dish/dish-3.jpg" alt="">
+                                    </div>
+                                    <div class="menu-content-header-name">
+                                        Chicken Parmesan
+                                    </div>
+                                </div>
+                                <div id="food-content-3" class="food-content">
+                                    <div class="food-container">
+                                        <span class="close" data-food-content="food-content-3">&times;</span>
+                                        <img id="food-content-image" src="./images/menu/main-dish/dish-3.jpg" alt="">
+                                        <div class="food-header-name" id="food-content-title">Chicken Parmesan</div>
+                                        <div class="food-paragraph" id="food-content-description">
+                                            Experience the ultimate in comfort food with Chicken Parmesan. This classic dish combines tender, breaded chicken cutlets with a savory marinara sauce and a generous layer of melted mozzarella and Parmesan cheeses. Baked to perfection, each bite delivers a crispy exterior and a gooey, cheesy interior, creating a harmonious blend of flavors that's both hearty and satisfying. Perfectly paired with pasta or a side salad, Chicken Parmesan is a timeless favorite that promises a deliciously indulgent experience.
+                                        </div>
+                                        <div class="food-price">Price: ₱ 115</div>
+                                        <div class="food-content-quantity">
+                                            <label for="quantity">Quantity:</label>
+                                            <input type="number" id="quantity" value="1" min="1">
+                                        </div>
+                                        <div class="food-total-price">Total: ₱ 115</div>
+                                        <button id="order-button">Order</button>
+                                    </div>
+                                </div>
+    <!----------------------main dishes Grilled Salmon content------------>
+                                <div class="menu-content-box" data-food-content="food-content-4">
+                                    <div class="menu-image">
+                                        <img src="./images/menu/main-dish/dish-4.jpg" alt="">
+                                    </div>
+                                    <div class="menu-content-header-name">
+                                        Grilled Salmon
+                                    </div>
+                                </div>
+                                <div id="food-content-4" class="food-content">
+                                    <div class="food-container">
+                                        <span class="close" data-food-content="food-content-4">&times;</span>
+                                        <img id="food-content-image" src="./images/menu/main-dish/dish-4.jpg" alt="">
+                                        <div class="food-header-name" id="food-content-title">Grilled Salmon</div>
+                                        <div class="food-paragraph" id="food-content-description">
+                                            Experience the delicate flavors of Grilled Salmon, a dish that showcases the perfect balance of simplicity and sophistication. Each fillet is expertly grilled to achieve a crisp, caramelized exterior while preserving a tender, flaky interior. The natural richness of the salmon is enhanced by a subtle smokiness and a touch of seasoning, creating a light yet satisfying meal. Ideal when paired with a fresh vegetable medley or a bed of quinoa, Grilled Salmon offers a wholesome and elegant dining experience that highlights the pure taste of premium seafood.
+                                        </div>
+                                        <div class="food-price">Price: ₱ 205</div>
+                                        <div class="food-content-quantity">
+                                            <label for="quantity">Quantity:</label>
+                                            <input type="number" id="quantity" value="1" min="1">
+                                        </div>
+                                        <div class="food-total-price">Total: ₱ 205</div>
+                                        <button id="order-button">Order</button>
+                                    </div>
+                                </div>
+    <!----------------------main dishes Vegetable Stir-Fry content------------>
+                                <div class="menu-content-box" data-food-content="food-content-5">
+                                    <div class="menu-image">
+                                        <img src="./images/menu/main-dish/dish-5.png" alt="">
+                                    </div>
+                                    <div class="menu-content-header-name">
+                                        Vegetable Stir-Fry
+                                    </div>
+                                </div>
+                                <div id="food-content-5" class="food-content">
+                                    <div class="food-container">
+                                        <span class="close" data-food-content="food-content-5">&times;</span>
+                                        <img id="food-content-image" src="./images/menu/main-dish/dish-5.png" alt="">
+                                        <div class="food-header-name" id="food-content-title">Vegetable Stir-Fry</div>
+                                        <div class="food-paragraph" id="food-content-description">
+                                            Experience the vibrant essence of Vegetable Stir-Fry, a dish that brings together a colorful array of fresh, crisp vegetables sautéed to perfection. Each bite offers a delightful crunch and a burst of natural flavors, enhanced by a savory, slightly tangy sauce. With its quick preparation and harmonious blend of textures, this stir-fry is both a nutritious and delicious option. Ideal served over fluffy rice or noodles, Vegetable Stir-Fry is a versatile, satisfying meal that celebrates the fresh taste of garden-picked produce.
+                                        </div>
+                                        <div class="food-price">Price: ₱ 95</div>
+                                        <div class="food-content-quantity">
+                                            <label for="quantity">Quantity:</label>
+                                            <input type="number" id="quantity" value="1" min="1">
+                                        </div>
+                                        <div class="food-total-price">Total: ₱ 95</div>
+                                        <button id="order-button">Order</button>
+                                    </div>
+                                </div>
+    <!----------------------main dishes Pork Tenderloin content------------>
+                                <div class="menu-content-box" data-food-content="food-content-6">
+                                    <div class="menu-image">
+                                        <img src="./images/menu/main-dish/dish-6.jpeg" alt="">
+                                    </div>
+                                    <div class="menu-content-header-name">
+                                        Pork Tenderloin
+                                    </div>
+                                </div>
+                                <div id="food-content-6" class="food-content">
+                                    <div class="food-container">
+                                        <span class="close" data-food-content="food-content-6">&times;</span>
+                                        <img id="food-content-image" src="./images/menu/main-dish/dish-6.jpeg" alt="">
+                                        <div class="food-header-name" id="food-content-title">Pork Tenderloin</div>
+                                        <div class="food-paragraph" id="food-content-description">
+                                            Experience the refined comfort of Pork Tenderloin, a dish that delivers tender, juicy pork with a perfect sear. This cut of meat is expertly seasoned and roasted or grilled to achieve a succulent interior and a flavorful, caramelized crust. With its rich, savory profile and subtle hints of herbs or spices, Pork Tenderloin makes for an elegant and satisfying meal. Whether served with roasted vegetables, a creamy sauce, or a side of mashed potatoes, it promises a memorable dining experience that highlights the tender quality and versatility of this premium cut.
+                                        </div>
+                                        <div class="food-price">Price: ₱ 185</div>
+                                        <div class="food-content-quantity">
+                                            <label for="quantity">Quantity:</label>
+                                            <input type="number" id="quantity" value="1" min="1">
+                                        </div>
+                                        <div class="food-total-price">Total: ₱ 185</div>
+                                        <button id="order-button">Order</button>
+                                    </div>
+                                </div>
+    <!----------------------main dishes Lamb Chops content------------>
+                                <div class="menu-content-box" data-food-content="food-content-7">
+                                    <div class="menu-image">
+                                        <img src="./images/menu/main-dish/dish-7.jpg" alt="">
+                                    </div>
+                                    <div class="menu-content-header-name">
+                                        Lamb Chops
+                                    </div>
+                                </div>
+                                <div id="food-content-7" class="food-content">
+                                    <div class="food-container">
+                                        <span class="close" data-food-content="food-content-7">&times;</span>
+                                        <img id="food-content-image" src="./images/menu/main-dish/dish-7.jpg" alt="">
+                                        <div class="food-header-name" id="food-content-title">Lamb Chops</div>
+                                        <div class="food-paragraph" id="food-content-description">
+                                            Experience the exquisite taste of Lamb Chops, a dish that epitomizes gourmet dining. Each chop is expertly seasoned and seared to create a flavorful, caramelized crust while retaining a tender, juicy center. Infused with aromatic herbs and spices, Lamb Chops deliver a rich, savory experience with a hint of sophistication. Perfectly paired with a side of roasted vegetables, creamy polenta, or a fresh mint sauce, this dish offers a luxurious and satisfying meal that showcases the refined flavors of high-quality lamb.
+                                        </div>
+                                        <div class="food-price">Price: ₱ 145</div>
+                                        <div class="food-content-quantity">
+                                            <label for="quantity">Quantity:</label>
+                                            <input type="number" id="quantity" value="1" min="1">
+                                        </div>
+                                        <div class="food-total-price">Total: ₱ 145</div>
+                                        <button id="order-button">Order</button>
+                                    </div>
+                                </div>
+    <!----------------------main dishes Chicken Alfredo content------------>
+                                <div class="menu-content-box" data-food-content="food-content-8">
+                                    <div class="menu-image">
+                                        <img src="./images/menu/main-dish/dish-8.jpg" alt="">
+                                    </div>
+                                    <div class="menu-content-header-name">
+                                        Chicken Alfredo
+                                    </div>
+                                </div>
+                                <div id="food-content-8" class="food-content">
+                                    <div class="food-container">
+                                        <span class="close" data-food-content="food-content-8">&times;</span>
+                                        <img id="food-content-image" src="./images/menu/main-dish/dish-8.jpg" alt="">
+                                        <div class="food-header-name" id="food-content-title"> Chicken Alfredo</div>
+                                        <div class="food-paragraph" id="food-content-description">
+                                            Experience the indulgence of Chicken Alfredo, a classic comfort dish that pairs tender, grilled chicken with a rich, creamy Alfredo sauce. Each bite features succulent chicken nestled in a velvety blend of butter, cream, and Parmesan cheese, creating a luscious and satisfying sauce. Served over a bed of perfectly cooked fettuccine, this dish offers a harmonious combination of flavors and textures. Whether enjoyed as a comforting weeknight meal or a special treat, Chicken Alfredo promises a deliciously creamy and heartwarming experience.
+                                        </div>
+                                        <div class="food-price">Price: ₱ 125</div>
+                                        <div class="food-content-quantity">
+                                            <label for="quantity">Quantity:</label>
+                                            <input type="number" id="quantity" value="1" min="1">
+                                        </div>
+                                        <div class="food-total-price">Total: ₱ 125</div>
+                                        <button id="order-button">Order</button>
+                                    </div>
+                                </div>
+    <!----------------------main dishes Chicken Curry content------------>
+                                <div class="menu-content-box" data-food-content="food-content-9">
+                                    <div class="menu-image">
+                                        <img src="./images/menu/main-dish/dish-9.jpg" alt="">
+                                    </div>
+                                    <div class="menu-content-header-name">
+                                        Chicken Curry
+                                    </div>
+                            </div>
+                            <div id="food-content-9" class="food-content">
+                                <div class="food-container">
+                                    <span class="close" data-food-content="food-content-9">&times;</span>
+                                    <img id="food-content-image" src="./images/menu/main-dish/dish-9.jpg" alt="">
+                                    <div class="food-header-name" id="food-content-title">Chicken Curry</div>
+                                    <div class="food-paragraph" id="food-content-description">
+                                        Experience the vibrant flavors of Chicken Curry, a dish that combines tender chicken pieces with a rich, aromatic sauce brimming with spices. Each bite offers a tantalizing blend of savory, spicy, and subtly sweet notes, enveloped in a creamy, comforting sauce. Whether served over fluffy rice or alongside warm naan bread, Chicken Curry delivers a satisfying and flavorful experience that showcases the depth and complexity of traditional curry spices. Perfect for a hearty meal that warms both the body and soul.
+                                    </div>
+                                    <div class="food-price">Price: ₱ 85</div>
+                                    <div class="food-content-quantity">
+                                        <label for="quantity">Quantity:</label>
+                                        <input type="number" id="quantity" value="1" min="1">
+                                    </div>
+                                    <div class="food-total-price">Total: ₱ 85</div>
+                                    <button id="order-button">Order</button>
+                                </div>
+                            </div>
+                            </div>
+    <!----------------------dessert section---------------->
+                        <div class="menu-food-names">Dessert</div>
+                            <div class="menu-content-boxs">
+    <!----------------------dessert Cheesecake content------------>
+                                <div class="menu-content-box" data-food-content="food-content-10">
+                                    <div class="menu-image">
+                                        <img src="./images/menu/dessert/dessert-1.webp" alt="">
+                                    </div>
+                                    <div class="menu-content-header-name">
+                                        Cheesecake
+                                    </div>
+                                </div>
+                                <div id="food-content-10" class="food-content">
+                                    <div class="food-container">
+                                        <span class="close" data-food-content="food-content-10">&times;</span>
+                                        <img id="food-content-image" src="./images/menu/dessert/dessert-1.webp" alt="">
+                                        <div class="food-header-name" id="food-content-title">Cheesecake</div>
+                                        <div class="food-paragraph" id="food-content-description">
+                                            Experience the creamy, velvety delight of cheesecake, where each bite unfolds layers of rich, smooth cheese filling nestled in a buttery, crumbly crust. This indulgent dessert combines the perfect balance of sweetness and tanginess, often enhanced by a variety of toppings like fresh fruit, chocolate, or caramel. Whether baked or chilled, classic or innovative, cheesecake offers a luxurious treat that tantalizes the taste buds and satisfies dessert cravings.
+                                        </div>
+                                        <div class="food-price">Price: ₱ 45</div>
+                                        <div class="food-content-quantity">
+                                            <label for="quantity">Quantity:</label>
+                                            <input type="number" id="quantity" value="1" min="1">
+                                        </div>
+                                        <div class="food-total-price">Total: ₱ 45</div>
+                                        <button id="order-button">Order</button>
+                                    </div>
+                                </div>
+    <!----------------------dessert brownies content------------>
+                                <div class="menu-content-box" data-food-content="food-content-11">
+                                    <div class="menu-image">
+                                        <img src="./images/menu/dessert/dessert-2.jpg" alt="">
+                                    </div>
+                                    <div class="menu-content-header-name">
+                                        Brownies
+                                    </div>
+                                </div>
+                                <div id="food-content-11" class="food-content">
+                                    <div class="food-container">
+                                        <span class="close" data-food-content="food-content-11">&times;</span>
+                                        <img id="food-content-image" src="./images/menu/dessert/dessert-2.jpg" alt="">
+                                        <div class="food-header-name" id="food-content-title">Brownies</div>
+                                        <div class="food-paragraph" id="food-content-description">
+                                            Experience the decadent joy of brownies, where each mouthful delivers a rich, fudgy delight. These beloved treats boast a dense, moist texture and a deep chocolate flavor, often punctuated by chunks of nuts, swirls of caramel, or a dusting of powdered sugar. From the first bite, you encounter a perfect blend of sweetness and a hint of cocoa bitterness, making brownies an irresistible dessert that melts in your mouth and warms your soul.
+                                        </div>
+                                        <div class="food-price">Price: ₱ 25</div>
+                                        <div class="food-content-quantity">
+                                            <label for="quantity">Quantity:</label>
+                                            <input type="number" id="quantity" value="1" min="1">
+                                        </div>
+                                        <div class="food-total-price">Total: ₱ 25</div>
+                                        <button id="order-button">Order</button>
+                                    </div>
+                                </div>
+    <!----------------------dessert Tiramisu content------------>
+                                <div class="menu-content-box" data-food-content="food-content-12">
+                                    <div class="menu-image">
+                                        <img src="./images/menu/dessert/dessert-3.jpg" alt="">
+                                    </div>
+                                    <div class="menu-content-header-name">
+                                        Tiramisu
+                                    </div>
+                                </div>
+                                <div id="food-content-12" class="food-content">
+                                    <div class="food-container">
+                                        <span class="close" data-food-content="food-content-12">&times;</span>
+                                        <img id="food-content-image" src="./images/menu/dessert/dessert-3.jpg" alt="">
+                                        <div class="food-header-name" id="food-content-title">Tiramisu</div>
+                                        <div class="food-paragraph" id="food-content-description">
+                                            Experience the luxurious layers of tiramisu, an indulgent Italian dessert that combines velvety mascarpone cream with espresso-soaked ladyfingers. Each bite offers a harmonious blend of rich coffee flavor and creamy sweetness, enhanced by a dusting of cocoa powder that adds a touch of sophistication. This classic treat delivers a delicate balance of textures, from the light, airy cream to the soft, coffee-infused cake layers, making it a truly exquisite dessert that lingers on the palate.
+                                        </div>
+                                        <div class="food-price">Price: ₱ 50</div>
+                                        <div class="food-content-quantity">
+                                            <label for="quantity">Quantity:</label>
+                                            <input type="number" id="quantity" value="1" min="1">
+                                        </div>
+                                        <div class="food-total-price">Total: ₱ 50</div>
+                                        <button id="order-button">Order</button>
+                                    </div>
+                                </div>
+    <!----------------------dessert Apple pie content------------>
+                                <div class="menu-content-box" data-food-content="food-content-13">
+                                    <div class="menu-image">
+                                        <img src="./images/menu/dessert/dessert-4.jpg" alt="">
+                                    </div>
+                                    <div class="menu-content-header-name">
+                                        Apple Pie
+                                    </div>
+                                </div>
+                                <div id="food-content-13" class="food-content">
+                                    <div class="food-container">
+                                        <span class="close" data-food-content="food-content-13">&times;</span>
+                                        <img id="food-content-image" src="./images/menu/dessert/dessert-4.jpg" alt="">
+                                        <div class="food-header-name" id="food-content-title">Apple Pie</div>
+                                        <div class="food-paragraph" id="food-content-description">
+                                            Experience the comforting embrace of apple pie, a quintessential American dessert that melds tender, spiced apples with a buttery, flaky crust. Each slice offers a warm, aromatic blend of cinnamon and nutmeg, while the apples themselves provide a satisfying balance of tartness and sweetness. The golden-brown crust adds a delightful crunch, creating a heartwarming treat that's perfect on its own or served with a scoop of vanilla ice cream.
+                                        </div>
+                                        <div class="food-price">Price: ₱ 75</div>
+                                        <div class="food-content-quantity">
+                                            <label for="quantity">Quantity:</label>
+                                            <input type="number" id="quantity" value="1" min="1">
+                                        </div>
+                                        <div class="food-total-price">Total: ₱ 75</div>
+                                        <button id="order-button">Order</button>
+                                    </div>
+                                </div>
+    <!----------------------dessert ice cream sundae content------------>
+                                <div class="menu-content-box" data-food-content="food-content-14">
+                                    <div class="menu-image">
+                                        <img src="./images/menu/dessert/dessert-5.webp" alt="">
+                                    </div>
+                                    <div class="menu-content-header-name">
+                                        Ice Cream Sundae
+                                    </div>
+                                </div>
+                                <div id="food-content-14" class="food-content">
+                                    <div class="food-container">
+                                        <span class="close" data-food-content="food-content-14">&times;</span>
+                                        <img id="food-content-image" src="./images/menu/dessert/dessert-5.webp" alt="">
+                                        <div class="food-header-name" id="food-content-title">Ice Cream Sundae</div>
+                                        <div class="food-paragraph" id="food-content-description">
+                                            Experience the delightful indulgence of an ice cream sundae, a classic treat that brings together creamy scoops of your favorite ice cream flavors with an array of mouthwatering toppings. Each spoonful offers a perfect blend of smooth, cold ice cream and rich, sweet sauces—like hot fudge or caramel—paired with crunchy nuts, fluffy whipped cream, and a cherry on top. This dessert is a joyful celebration of flavors and textures, providing a refreshing and satisfying treat that can be customized to suit any craving.
+                                        </div>
+                                        <div class="food-price">Price: ₱ 95</div>
+                                        <div class="food-content-quantity">
+                                            <label for="quantity">Quantity:</label>
+                                            <input type="number" id="quantity" value="1" min="1">
+                                        </div>
+                                        <div class="food-total-price">Total: ₱ 95</div>
+                                        <button id="order-button">Order</button>
+                                    </div>
+                                </div>
+    <!----------------------dessert Macarons content------------>
+                                <div class="menu-content-box" data-food-content="food-content-15">
+                                    <div class="menu-image">
+                                        <img src="./images/menu/dessert/dessert-6.jpg" alt="">
+                                    </div>
+                                    <div class="menu-content-header-name">
+                                        Macarons
+                                    </div>
+                                </div>
+                                <div id="food-content-15" class="food-content">
+                                    <div class="food-container">
+                                        <span class="close" data-food-content="food-content-15">&times;</span>
+                                        <img id="food-content-image" src="./images/menu/dessert/dessert-6.jpg" alt="">
+                                        <div class="food-header-name" id="food-content-title">Macarons</div>
+                                        <div class="food-paragraph" id="food-content-description">
+                                            Experience the delicate elegance of macarons, the iconic French pastries renowned for their light, crisp shells and luscious, flavorful fillings. Each bite offers a harmonious blend of textures—the crisp exterior gives way to a soft, chewy interior, while the vibrant fillings, ranging from rich chocolate to tangy fruit, provide a burst of taste. With their colorful, artful presentation and refined flavor profiles, macarons are a sophisticated treat that elevates any occasion with a touch of gourmet delight.
+                                        </div>
+                                        <div class="food-price">Price: ₱ 35</div>
+                                        <div class="food-content-quantity">
+                                            <label for="quantity">Quantity:</label>
+                                            <input type="number" id="quantity" value="1" min="1">
+                                        </div>
+                                        <div class="food-total-price">Total: ₱ 35</div>
+                                        <button id="order-button">Order</button>
+                                    </div>
+                                </div>
+                            </div>
+    <!--------------fast food section-------------->        
+                                <div class="menu-food-names">Fast Food</div>
+                                <div class="menu-content-boxs">
+    <!--------------------fast food burger content-------------------->                                   
+                                <div class="menu-content-box" data-food-content="food-content-16">
+                                    <div class="menu-image">
+                                        <img src="./images/menu/fast-food/fast-food-1.jpg" alt="">
+                                    </div>
+                                    <div class="menu-content-header-name">
+                                        Burger
+                                    </div>
+                                </div>
+                                <div id="food-content-16" class="food-content">
+                                    <div class="food-container">
+                                        <span class="close" data-food-content="food-content-16">&times;</span>
+                                        <img id="food-content-image" src="./images/menu/fast-food/fast-food-1.jpg" alt="">
+                                        <div class="food-header-name" id="food-content-title">Burger</div>
+                                        <div class="food-paragraph" id="food-content-description">
+                                            Experience the satisfying pleasure of a burger, a classic favorite that brings together a juicy, perfectly seasoned patty with a medley of fresh toppings and condiments. Each bite delivers a harmonious blend of flavors and textures: the savory meat, crispy lettuce, ripe tomatoes, pickles, and a slather of creamy sauce all nestled within a soft, toasted bun. Whether you prefer a simple cheeseburger or a gourmet creation with specialty ingredients, a burger offers a comforting, customizable meal that's both hearty and delicious.
+                                        </div>
+                                        <div class="food-price">Price: ₱ 90</div>
+                                        <div class="food-content-quantity">
+                                            <label for="quantity">Quantity:</label>
+                                            <input type="number" id="quantity" value="1" min="1">
+                                        </div>
+                                        <div class="food-total-price">Total: ₱ 90</div>
+                                        <button id="order-button">Order</button>
+                                    </div>
+                                </div>
+    <!--------------------fast food pizza content-------------------->                                   
+                                <div class="menu-content-box" data-food-content="food-content-17">
+                                    <div class="menu-image">
+                                        <img src="./images/menu/fast-food/fast-food-2.jpg" alt="">
+                                    </div>
+                                    <div class="menu-content-header-name">
+                                        Pizza
+                                    </div>
+                                </div>
+                                <div id="food-content-17" class="food-content">
+                                    <div class="food-container">
+                                        <span class="close" data-food-content="food-content-17">&times;</span>
+                                        <img id="food-content-image" src="./images/menu/fast-food/fast-food-2.jpg" alt="">
+                                        <div class="food-header-name" id="food-content-title">Pizza</div>
+                                        <div class="food-paragraph" id="food-content-description">
+                                            Experience the irresistible allure of pizza, a universally loved dish that combines a crisp, golden crust with a layer of savory tomato sauce and gooey, melted cheese. Each slice offers a delightful blend of flavors and textures, from the rich, tangy sauce and creamy cheese to the array of toppings like pepperoni, vegetables, or gourmet ingredients. Whether you enjoy a classic Margherita or a creative, loaded variety, pizza provides a comforting and satisfying culinary experience that’s perfect for sharing or savoring solo.
+                                        </div>
+                                        <div class="food-price">Price: ₱ 105</div>
+                                        <div class="food-content-quantity">
+                                            <label for="quantity">Quantity:</label>
+                                            <input type="number" id="quantity" value="1" min="1">
+                                        </div>
+                                        <div class="food-total-price">Total: ₱ 105</div>
+                                        <button id="order-button">Order</button>
+                                    </div>
+                                </div>
+    <!--------------------fast food Hot Dogs content-------------------->                                   
+                                <div class="menu-content-box" data-food-content="food-content-18">
+                                    <div class="menu-image">
+                                        <img src="./images/menu/fast-food/fast-food-3.jpg" alt="">
+                                    </div>
+                                    <div class="menu-content-header-name">
+                                        Hot Dogs
+                                    </div>
+                                </div>
+                                <div id="food-content-18" class="food-content">
+                                    <div class="food-container">
+                                        <span class="close" data-food-content="food-content-18">&times;</span>
+                                        <img id="food-content-image" src="./images/menu/fast-food/fast-food-3.jpg" alt="">
+                                        <div class="food-header-name" id="food-content-title">Hot Dogs</div>
+                                        <div class="food-paragraph" id="food-content-description">
+                                            Experience the classic charm of hot dogs, a beloved comfort food that pairs a juicy, savory sausage with a soft, slightly toasted bun. Each bite delivers a satisfying blend of flavors, from the well-seasoned sausage to the array of condiments and toppings—such as mustard, ketchup, onions, relish, or sauerkraut—that add a burst of taste and texture. Whether enjoyed at a casual barbecue or a bustling ballpark, hot dogs offer a simple yet satisfying meal that captures the essence of American outdoor eating.
+                                        </div>
+                                        <div class="food-price">Price: ₱ 65</div>
+                                        <div class="food-content-quantity">
+                                            <label for="quantity">Quantity:</label>
+                                            <input type="number" id="quantity" value="1" min="1">
+                                        </div>
+                                        <div class="food-total-price">Total: ₱ 65</div>
+                                        <button id="order-button">Order</button>
+                                    </div>
+                                </div>
+    <!--------------------fast food Chicken Nuggets content-------------------->                                   
+                                <div class="menu-content-box" data-food-content="food-content-19">
+                                    <div class="menu-image">
+                                        <img src="./images/menu/fast-food/fast-food-4.webp" alt="">
+                                    </div>
+                                    <div class="menu-content-header-name">
+                                        Chicken Nuggets
+                                    </div>
+                                </div>
+                                <div id="food-content-19" class="food-content">
+                                    <div class="food-container">
+                                        <span class="close" data-food-content="food-content-19">&times;</span>
+                                        <img id="food-content-image" src="./images/menu/fast-food/fast-food-4.webp" alt="">
+                                        <div class="food-header-name" id="food-content-title">Chicken Nuggets</div>
+                                        <div class="food-paragraph" id="food-content-description">
+                                            Experience the crispy delight of chicken nuggets, a popular comfort food that combines tender, juicy chicken with a golden, crunchy coating. Each bite offers a satisfying crunch followed by a flavorful, succulent interior, perfect for dipping into a variety of sauces like honey mustard, barbecue, or classic ketchup. Whether enjoyed as a quick snack, a fun meal, or a party favorite, chicken nuggets deliver a comforting and versatile treat that appeals to both kids and adults alike.
+                                        </div>
+                                        <div class="food-price">Price: ₱ 80</div>
+                                        <div class="food-content-quantity">
+                                            <label for="quantity">Quantity:</label>
+                                            <input type="number" id="quantity" value="1" min="1">
+                                        </div>
+                                        <div class="food-total-price">Total: ₱ 80</div>
+                                        <button id="order-button">Order</button>
+                                    </div>
+                                </div>
+    <!--------------------fast food French Fries content-------------------->                                   
+                                <div class="menu-content-box" data-food-content="food-content-20">
+                                    <div class="menu-image">
+                                        <img src="./images/menu/fast-food/fast-food-5.jpg" alt="">
+                                    </div>
+                                    <div class="menu-content-header-name">
+                                        French Fries
+                                    </div>
+                                </div>
+                                <div id="food-content-20" class="food-content">
+                                    <div class="food-container">
+                                        <span class="close" data-food-content="food-content-20">&times;</span>
+                                        <img id="food-content-image" src="./images/menu/fast-food/fast-food-5.jpg" alt="">
+                                        <div class="food-header-name" id="food-content-title">French Fries</div>
+                                        <div class="food-paragraph" id="food-content-description">
+                                            Experience the crispy, golden perfection of French fries, a universally loved side dish that combines a satisfying crunch with a tender, fluffy interior. Each fry is lightly seasoned and fried to a crisp, offering a delightful contrast in textures and a rich, savory flavor. Whether enjoyed plain or with a sprinkle of sea salt, dipped in ketchup, mayo, or your favorite sauce, French fries provide a simple yet indulgent treat that enhances any meal or stands perfectly on its own as a delicious snack.
+                                        </div>
+                                        <div class="food-price">Price: ₱ 70</div>
+                                        <div class="food-content-quantity">
+                                            <label for="quantity">Quantity:</label>
+                                            <input type="number" id="quantity" value="1" min="1">
+                                        </div>
+                                        <div class="food-total-price">Total: ₱ 70</div>
+                                        <button id="order-button">Order</button>
+                                    </div>
+                                </div>
+    <!--------------------fast food Tacos content-------------------->                                   
+                                <div class="menu-content-box" data-food-content="food-content-21">
+                                    <div class="menu-image">
+                                        <img src="./images/menu/fast-food/fast-food-6.jpg" alt="">
+                                    </div>
+                                    <div class="menu-content-header-name">
+                                        Tacos
+                                    </div>
+                                </div>
+                                <div id="food-content-21" class="food-content">
+                                    <div class="food-container">
+                                        <span class="close" data-food-content="food-content-21">&times;</span>
+                                        <img id="food-content-image" src="./images/menu/fast-food/fast-food-6.jpg" alt="">
+                                        <div class="food-header-name" id="food-content-title">Tacos</div>
+                                        <div class="food-paragraph" id="food-content-description">
+                                            Experience the vibrant explosion of flavors and textures in tacos, a versatile and beloved dish that wraps a variety of fillings in a soft or crispy shell. Each bite delivers a delightful combination of seasoned meats, fresh vegetables, and zesty toppings like salsa, guacamole, and sour cream. Whether you prefer traditional fillings like beef and chicken or more adventurous options like fish or vegetarian, tacos offer a customizable and satisfying culinary experience that’s perfect for any occasion, from casual meals to festive gatherings.
+                                        </div>
+                                        <div class="food-price">Price: ₱ 85</div>
+                                        <div class="food-content-quantity">
+                                            <label for="quantity">Quantity:</label>
+                                            <input type="number" id="quantity" value="1" min="1">
+                                        </div>
+                                        <div class="food-total-price">Total: ₱ 85</div>
+                                        <button id="order-button">Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    <!--------------drinks section-------------->        
+                        <div class="menu-food-names">Drinks</div>
+                            <div class="menu-content-boxs">
+    <!--------------------drinks Iced Matcha Latte content-------------------->                                   
+                                <div class="menu-content-box" data-food-content="food-content-22">
+                                    <div class="menu-image">
+                                        <img src="./images/menu/drinks/drink-1.jpg" alt="">
+                                    </div>
+                                    <div class="menu-content-header-name">
+                                        Iced Matcha Latte
+                                    </div>
+                                </div>
+                                <div id="food-content-22" class="food-content">
+                                    <div class="food-container">
+                                        <span class="close" data-food-content="food-content-22">&times;</span>
+                                        <img id="food-content-image" src="./images/menu/drinks/drink-1.jpg" alt="">
+                                        <div class="food-header-name" id="food-content-title">Iced Matcha Latte</div>
+                                        <div class="food-paragraph" id="food-content-description">
+                                            Experience the refreshing elegance of an iced matcha latte, a vibrant and invigorating drink that combines the rich, earthy flavor of high-quality matcha with smooth, chilled milk. Each sip offers a harmonious blend of the matcha's natural, slightly bitter notes with the creamy sweetness of the milk, perfectly balanced and served over ice. This chilled beverage not only provides a revitalizing pick-me-up but also showcases the sophisticated taste and vibrant green color of matcha, making it a stylish and refreshing choice for any time of day.
+                                        </div>
+                                        <div class="food-price">Price: ₱ 70</div>
+                                        <div class="food-content-quantity">
+                                            <label for="quantity">Quantity:</label>
+                                            <input type="number" id="quantity" value="1" min="1">
+                                        </div>
+                                        <div class="food-total-price">Total: ₱ 70</div>
+                                        <button id="order-button">Order</button>
+                                    </div>
+                                </div>
+<!--------------------drinks Freshly Squeezed Lemonade-------------------->                                   
+                                <div class="menu-content-box" data-food-content="food-content-23">
+                                    <div class="menu-image">
+                                        <img src="./images/menu/drinks/drink-2.jpg" alt="">
+                                    </div>
+                                    <div class="menu-content-header-name">
+                                        Freshly Squeezed Lemonade
+                                    </div>
+                                </div>
+                                <div id="food-content-23" class="food-content">
+                                    <div class="food-container">
+                                        <span class="close" data-food-content="food-content-23">&times;</span>
+                                        <img id="food-content-image" src="./images/menu/drinks/drink-2.jpg" alt="">
+                                        <div class="food-header-name" id="food-content-title">Freshly Squeezed Lemonade</div>
+                                        <div class="food-paragraph" id="food-content-description">
+
+                                            Experience the invigorating zest of freshly squeezed lemonade, a quintessentially refreshing drink that combines the tangy brightness of sun-ripened lemons with a touch of sweetness. Each sip delivers a crisp, thirst-quenching burst of citrus flavor, perfectly balanced by just the right amount of sugar and chilled to perfection. The vibrant, sunny yellow hue and the natural, aromatic essence of real lemon juice make this lemonade a delightful, revitalizing treat that captures the essence of summer in every glass.
+                                        </div>
+                                        <div class="food-price">Price: ₱ 55</div>
+                                        <div class="food-content-quantity">
+                                            <label for="quantity">Quantity:</label>
+                                            <input type="number" id="quantity" value="1" min="1">
+                                        </div>
+                                        <div class="food-total-price">Total: ₱ 55</div>
+                                        <button id="order-button">Order</button>
+                                    </div>
+                                </div>
+    <!--------------------drinks Hot Chocolate content-------------------->                                   
+                                <div class="menu-content-box" data-food-content="food-content-24">
+                                    <div class="menu-image">
+                                        <img src="./images/menu/drinks/drink-3.jpg" alt="">
+                                    </div>
+                                    <div class="menu-content-header-name">
+                                        Hot Chocolate
+                                    </div>
+                                </div>
+                                <div id="food-content-24" class="food-content">
+                                    <div class="food-container">
+                                        <span class="close" data-food-content="food-content-24">&times;</span>
+                                        <img id="food-content-image" src="./images/menu/drinks/drink-3.jpg" alt="">
+                                        <div class="food-header-name" id="food-content-title">Hot Chocolate</div>
+                                        <div class="food-paragraph" id="food-content-description">
+                                            Experience the comforting warmth of hot chocolate, a rich and indulgent beverage that envelops you in a velvety blend of creamy milk and decadent cocoa. Each sip offers a soothing combination of sweet, chocolatey goodness, often topped with a dollop of whipped cream or a sprinkle of cocoa powder for added decadence. Whether enjoyed by a crackling fire or as a cozy treat on a chilly day, hot chocolate provides a delightful escape into a world of creamy, chocolatey bliss.
+                                        </div>
+                                        <div class="food-price">Price: ₱ 75</div>
+                                        <div class="food-content-quantity">
+                                            <label for="quantity">Quantity:</label>
+                                            <input type="number" id="quantity" value="1" min="1">
+                                        </div>
+                                        <div class="food-total-price">Total: ₱ 75</div>
+                                        <button id="order-button">Order</button>
+                                    </div>
+                                </div>
+    <!--------------------drinks Fruit Smoothie content-------------------->                                   
+                                <div class="menu-content-box" data-food-content="food-content-25">
+                                    <div class="menu-image">
+                                        <img src="./images/menu/drinks/drink-4.jpg" alt="">
+                                    </div>
+                                    <div class="menu-content-header-name">
+                                        Fruit Smoothie
+                                    </div>
+                                </div>
+                                <div id="food-content-25" class="food-content">
+                                    <div class="food-container">
+                                        <span class="close" data-food-content="food-content-25">&times;</span>
+                                        <img id="food-content-image" src="./images/menu/drinks/drink-4.jpg" alt="">
+                                        <div class="food-header-name" id="food-content-title">Fruit Smoothie</div>
+                                        <div class="food-paragraph" id="food-content-description">
+                                            Experience the vibrant refreshment of a fruit smoothie, a deliciously nutritious blend of ripe, fresh fruits and creamy ingredients. Each sip delivers a burst of natural sweetness and tanginess, perfectly balanced with the smooth, velvety texture of blended yogurt or milk. Bursting with flavors from fruits like berries, bananas, and mangoes, and often enhanced with a touch of honey or a sprinkle of chia seeds, a fruit smoothie is a revitalizing and satisfying drink that nourishes both body and spirit.
+                                        </div>
+                                        <div class="food-price">Price: ₱ 65</div>
+                                        <div class="food-content-quantity">
+                                            <label for="quantity">Quantity:</label>
+                                            <input type="number" id="quantity" value="1" min="1">
+                                        </div>
+                                        <div class="food-total-price">Total: ₱ 65</div>
+                                        <button id="order-button">Order</button>
+                                    </div>
+                                </div>
+    <!--------------------drinks Iced Tea content-------------------->                                   
+                                <div class="menu-content-box" data-food-content="food-content-26">
+                                    <div class="menu-image">
+                                        <img src="./images/menu/drinks/drink-5.png" alt="">
+                                    </div>
+                                    <div class="menu-content-header-name">
+                                        Iced Tea
+                                    </div>
+                                </div>
+                                <div id="food-content-26" class="food-content">
+                                    <div class="food-container">
+                                        <span class="close" data-food-content="food-content-26">&times;</span>
+                                        <img id="food-content-image" src="./images/menu/drinks/drink-5.png" alt="">
+                                        <div class="food-header-name" id="food-content-title">Iced Tea</div>
+                                        <div class="food-paragraph" id="food-content-description">
+                                            Experience the crisp, invigorating flavor of iced tea, a refreshing beverage that combines the subtle complexity of brewed tea with the chill of ice. Each sip offers a clean, cool taste, often enhanced by a touch of lemon, a hint of mint, or a splash of fruit juice. Whether enjoyed sweetened or unsweetened, plain or flavored, iced tea provides a rejuvenating and versatile drink that’s perfect for quenching your thirst on a warm day or as a light, refreshing accompaniment to any meal.
+                                        </div>
+                                        <div class="food-price">Price: ₱ 55</div>
+                                        <div class="food-content-quantity">
+                                            <label for="quantity">Quantity:</label>
+                                            <input type="number" id="quantity" value="1" min="1">
+                                        </div>
+                                        <div class="food-total-price">Total: ₱ 55</div>
+                                        <button id="order-button">Order</button>
+                                    </div>
+                                </div>
+    <!--------------------drinks Sparkling Water with Citrus content-------------------->                                   
+                                <div class="menu-content-box" data-food-content="food-content-27">
+                                    <div class="menu-image">
+                                        <img src="./images/menu/drinks/drink-6.jpg" alt="">
+                                    </div>
+                                    <div class="menu-content-header-name">
+                                        Sparkling Water with Citrus
+                                    </div>
+                                </div>
+                                <div id="food-content-27" class="food-content">
+                                    <div class="food-container">
+                                        <span class="close" data-food-content="food-content-27">&times;</span>
+                                        <img id="food-content-image" src="./images/menu/drinks/drink-6.jpg" alt="">
+                                        <div class="food-header-name" id="food-content-title">Sparkling Water with Citrus</div>
+                                        <div class="food-paragraph" id="food-content-description">
+                                            Experience the effervescent refreshment of sparkling water with citrus, a revitalizing drink that fuses the crisp, clean taste of sparkling water with the zesty brightness of fresh citrus. Each sip delivers a delightful burst of bubbles that tickle your palate, complemented by the invigorating flavors of lemon, lime, or orange. This sparkling beverage offers a sophisticated and thirst-quenching alternative to plain water, perfect for a refreshing uplift any time of day.
+                                        </div>
+                                        <div class="food-price">Price: ₱ 45</div>
+                                        <div class="food-content-quantity">
+                                            <label for="quantity">Quantity:</label>
+                                            <input type="number" id="quantity" value="1" min="1">
+                                        </div>
+                                        <div class="food-total-price">Total: ₱ 45</div>
+                                        <button id="order-button">Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+    <!----------alert box content when the order succesfully ordered------------>
+            <div id="alert-box" class="alert-box">
+                <div class="alert-box-content">
+                    <span class="alert-box-close">&times;</span>
+                    <p id="alert-message"></p>
+                </div>
+            </div>
+        </section>
+
+<!-------------------------device responsive section----------------------------------------------->
+        <section class="device-responsive" id="device-responsive">
+            <div class="device-responsive-margin-section">
+                <div class="device-responsive-header-name">Responsive Design</div>
+                    <div class="device-responsive-container">
+                        <div class="device-responsive-text-section">
+                            <div class="device-responsive-text-header-name">
+                                You Can Order from Any Device as It’s Fully Responsive
+                            </div>
+                            <div class="device-responsive-paragraph">
+                                Placing an order at Amara's Food Court is hassle-free, thanks to our fully responsive online system. You can easily order from any device. whether you're using a computer, laptop, tablet, or smartphone. No matter where you are, our user-friendly platform ensures a smooth ordering experience, so you can enjoy our delicious food with just a few taps or clicks, whether you're at home or on the move.
+                            </div>
+                        </div>
+                        <div class="device-responsive-image-section">
+                            <img src="./images/responsive.png" alt="">
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+<!-------------------------services section----------------------------------------------->
+        <section class="services" id="services">
+            <div class="services-margin-section">
+                <div class="services-header-name">Services</div>
+                <div class="services-container">
+                    <div class="services-content-wrapper">
+                        <div class="services-content">
+                            <div class="services-content-header-name">
+                                Diverse Food Options
+                            </div>
+                            <div class="services-paragraph">
+                                <span>Variety of Cuisines and Menus </span>Offering a range of food choices from different vendors ensures that there is something for everyone. This diversity helps attract a broader customer base and caters to various tastes and dietary preferences.
+                            </div>
+                            <div class="services-image-section">
+                                <img src="./images/services/service-1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="services-content">
+                            <div class="services-content-header-name">
+                                Centralized Seating Area
+                            </div>
+                            <div class="services-paragraph">
+                                <span>Comfortable and Accessible Dining Space </span>A well-organized seating area that is clean, comfortable, and accessible is vital. It allows customers to enjoy their meals in a shared space and helps manage foot traffic efficiently.
+                            </div>
+                            <div class="services-image-section">
+                                <img src="./images/services/service-2.jfif" alt="">
+                            </div>
+                        </div>
+                        <div class="services-content">
+                            <div class="services-content-header-name">
+                                Convenient Payment Options
+                            </div>
+                            <div class="services-paragraph">
+                                <span>Multiple Methods for Easy Transactions </span>Providing various payment options, including cash, credit/debit cards, and mobile payments, makes it easier for customers to complete their purchases. Some food courts may also offer a unified payment system for added convenience.
+                            </div>
+                            <div class="services-image-section">
+                                <img src="./images/services/service-3.avif" alt="">
+                            </div>
+                        </div>
+                        <div class="services-content">
+                            <div class="services-content-header-name">
+                                Cleanliness and Maintenance
+                            </div>
+                            <div class="services-paragraph">
+                                <span>Regular Upkeep of the Food Court Area </span>Maintaining a clean and hygienic environment is essential. This includes regular cleaning of dining areas, food courts, and waste management to ensure a pleasant experience for customers.
+                            </div>
+                            <div class="services-image-section">
+                                <img src="./images/services/service-4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="services-content">
+                            <div class="services-content-header-name">
+                                Customer Services
+                            </div>
+                            <div class="services-paragraph">
+                                <span>Assistance and Support for a Better Experience </span>Having information desks, assistance for lost items, and customer support enhances the overall experience. This service ensures that customers can easily find help if needed and have their concerns addressed.
+                            </div>
+                            <div class="services-image-section">
+                                <img src="./images/services/service-5.avif" alt="">
+                            </div>
+                        </div>
+                        <div class="services-content">
+                            <div class="services-content-header-name">
+                                Diverse Food Options
+                            </div>
+                            <div class="services-paragraph">
+                                <span>Variety of Cuisines and Menus </span>Offering a range of food choices from different vendors ensures that there is something for everyone. This diversity helps attract a broader customer base and caters to various tastes and dietary preferences.
+                            </div>
+                            <div class="services-image-section">
+                                <img src="./images/services/service-1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="services-content">
+                            <div class="services-content-header-name">
+                                Centralized Seating Area
+                            </div>
+                            <div class="services-paragraph">
+                                <span>Comfortable and Accessible Dining Space </span>A well-organized seating area that is clean, comfortable, and accessible is vital. It allows customers to enjoy their meals in a shared space and helps manage foot traffic efficiently.
+                            </div>
+                            <div class="services-image-section">
+                                <img src="./images/services/service-2.jfif" alt="">
+                            </div>
+                        </div>
+                        <div class="services-content">
+                            <div class="services-content-header-name">
+                                Convenient Payment Options
+                            </div>
+                            <div class="services-paragraph">
+                                <span>Multiple Methods for Easy Transactions </span>Providing various payment options, including cash, credit/debit cards, and mobile payments, makes it easier for customers to complete their purchases. Some food courts may also offer a unified payment system for added convenience.
+                            </div>
+                            <div class="services-image-section">
+                                <img src="./images/services/service-3.avif" alt="">
+                            </div>
+                        </div>
+                        <div class="services-content">
+                            <div class="services-content-header-name">
+                                Cleanliness and Maintenance
+                            </div>
+                            <div class="services-paragraph">
+                                <span>Regular Upkeep of the Food Court Area </span>Maintaining a clean and hygienic environment is essential. This includes regular cleaning of dining areas, food courts, and waste management to ensure a pleasant experience for customers.
+                            </div>
+                            <div class="services-image-section">
+                                <img src="./images/services/service-4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="services-content">
+                            <div class="services-content-header-name">
+                                Customer Services
+                            </div>
+                            <div class="services-paragraph">
+                                <span>Assistance and Support for a Better Experience </span>Having information desks, assistance for lost items, and customer support enhances the overall experience. This service ensures that customers can easily find help if needed and have their concerns addressed.
+                            </div>
+                            <div class="services-image-section">
+                                <img src="./images/services/service-5.avif" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="about" id="about">
+            <div class="about-margin-section">
+                <div class="about-header-name">About</div>
+                    <div class="about-container">
+                        <div class="about-history">
+                            <div class="about-history-header-name">History of Amara's Food Court</div>
+                            <div class="about-history-paragraph">
+                                In the town of Sudipen, located in the province of La Union, Philippines, stands Amara's Food Court, the very first food court business in the area. The story of Amara's Food Court is an inspiring tale of perseverance and dreams fulfilled.<br><br>
+
+                                The owner of Amara's Food Court is Amara, who was once a humble Mobile Legends (ML) player. Her dedication and hard work in ML eventually led to a prosperous life and allowed her to pursue her entrepreneurial dreams.<br><br>
+
+                                With her relentless drive and ambition, Amara achieved success not just in the gaming world but also in business. She established Amara's Food Court, which quickly gained recognition and appreciation from the people of Sudipen and neighboring towns. The food court is celebrated for its exceptional and unique flavors, reflecting Amara's passion and commitment to her business.<br><br>
+
+                                It wasn't just the remarkable taste of the food that drew people in, but also Amara's charming personality. She often refers to herself as "cute," showcasing her lighthearted and cheerful nature despite her achievements.<br><br>
+
+                                Amara's Food Court has become a central hub for dining in Sudipen, bringing a fresh and delightful culinary experience to local residents and visitors alike. It stands as a testament to how dedication and dreams can lead to meaningful and positive change, serving as an inspiration for others to follow their own aspirations.
+                            </div>
+                        </div>
+                        <div class="about-image">
+                            <img src="./images/about.png" alt="">
+                        </div>
+                    </div>
+            </div>
+        </section>
+        
+
+        <section class="contact" id="contact">
+            <div class="contact-margin-section">
+                <div class="contact-header-name">Contact</div>
+                    <div class="contact-container">
+                        <form id="contactForm">
+                            <div class="contact_input">
+                                <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+                        
+                                <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+
+                                <input type="number" id="number" name="number" placeholder="Number" required><br><br>
+
+                                <input type="text" id="subject" name="subject" placeholder="Subject" required><br><br>
+                            </div>
+                            <div class="contact_message-textarea">
+                                <textarea id="message" name="message" rows="10" cols="50" placeholder="Your Message" required></textarea><br><br>
+                                <input class="submitBtn" type="submit" onclick="sendMail()" value="Send Message">
+                            </div>
+                        </form>
+                    </div>
+            </div>
+        </section>
+
+        <div class="footer">
+            <div class="footer-margin-section">
+                <div class="footer-container">
+                    <div class="footer-information">
+                        <div class="footer-address">
+                            <div class="footer-header-name">
+                                ADDRESS
+                            </div>
+                            <div class="footer-paragraph">
+                                Sudipen,
+                                <br>
+                                Ilocano,
+                                <br>
+                                La Union
+                                <br>
+                                Philippines
+                            </div>
+                        </div>
+                        <div class="footer-contact-info">
+                            <div class="footer-header-name">
+                                CONTACT INFORMATION
+                            </div>
+                            <div class="footer-paragraph">
+                                (925) 553-6707
+                                <br><br>
+                                amarafoodcourt@kyutie.com
+                            </div>
+                        </div>
+                        <div class="contact-social-media">
+                            <div class="footer-header-name">
+                                SOCIAL LINK
+                            </div>
+                            <div class="footer-paragraph">
+                                <a href=""><i class='bx bxl-telegram' ></i></a>
+                                <a href=""><i class='bx bxl-facebook-circle'></i></a>
+                                <a href=""><i class='bx bxl-tiktok' ></i></a>
+                                <a href=""><i class='bx bxl-instagram' ></a></i>
+                            </div>
+                        </div>
+                        <div class="footer-branch">
+                            <img src="./images/footer.png" alt="">
+                        </div>
+                    </div>
+                    <div class="footer-license">
+                        Copyright 2024 | Privacy Policy
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./functions/hamburger.js"></script>
+    <script src="./functions/navigation-active.js"></script>
+    <script src="./functions/home-animation.js"></script>
+    <script src="./functions/menu-function.js"></script>
+    <script src="./functions/home-searchbar.js"></script>
+    <script src="./functions/services-slide.js"></script>
+    <script src="./functions/email.js"></script>
+    <script src="./functions/floating-page.js"></script>
+
+</body>
+</html>
